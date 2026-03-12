@@ -1,0 +1,78 @@
+.palette-panel {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.panel-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: #e040fb;
+  margin: 0 0 14px 0;
+  letter-spacing: 1px;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.color-swatch {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.1s, box-shadow 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-swatch:hover {
+  transform: scale(1.12);
+  box-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+.color-swatch.selected {
+  border-color: #fff;
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.5), 0 0 12px rgba(224,64,251,0.6);
+  transform: scale(1.1);
+}
+
+.check {
+  font-size: 11px;
+  color: rgba(255,255,255,0.9);
+  text-shadow: 0 0 4px #000, 0 0 4px #000;
+  font-weight: bold;
+}
+
+.selected-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 8px 10px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.selected-preview {
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.2);
+  flex-shrink: 0;
+}
+
+.selected-name {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  color: #ccc;
+  letter-spacing: 0.5px;
+}

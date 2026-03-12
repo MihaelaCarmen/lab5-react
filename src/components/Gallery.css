@@ -1,0 +1,165 @@
+.gallery-panel {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  padding: 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.gallery-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.gallery-header .panel-title {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: #e040fb;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.gallery-count {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  color: #e040fb;
+  background: rgba(224,64,251,0.15);
+  padding: 4px 8px;
+  border-radius: 20px;
+  border: 1px solid rgba(224,64,251,0.3);
+}
+
+.gallery-empty {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: rgba(255,255,255,0.2);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 7px;
+  text-align: center;
+  line-height: 1.8;
+}
+
+.gallery-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  flex: 1;
+  padding-right: 4px;
+}
+
+.gallery-list::-webkit-scrollbar {
+  width: 4px;
+}
+.gallery-list::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.03);
+}
+.gallery-list::-webkit-scrollbar-thumb {
+  background: rgba(224,64,251,0.4);
+  border-radius: 4px;
+}
+
+.gallery-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: border-color 0.2s;
+}
+
+.gallery-item:hover {
+  border-color: rgba(224,64,251,0.4);
+}
+
+.thumb-wrapper {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.thumb-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.thumb-wrapper:hover .thumb-overlay {
+  opacity: 1;
+}
+
+.thumb-btn {
+  background: rgba(224,64,251,0.8);
+  border: none;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+.thumb-btn:hover {
+  transform: scale(1.1);
+}
+
+.gallery-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.item-number {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 9px;
+  color: #e040fb;
+}
+
+.item-date {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 6px;
+  color: rgba(255,255,255,0.3);
+  word-break: break-all;
+}
+
+.delete-btn {
+  background: none;
+  border: 1px solid rgba(255,80,80,0.3);
+  color: rgba(255,100,100,0.6);
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: all 0.15s;
+  align-self: flex-start;
+}
+
+.delete-btn:hover {
+  background: rgba(255,80,80,0.2);
+  color: #ff6060;
+  border-color: rgba(255,80,80,0.6);
+}

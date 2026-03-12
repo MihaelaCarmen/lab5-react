@@ -1,0 +1,24 @@
+{
+  "colors": [
+    { "id": 1, "name": "Pitch Black", "hex": "#0a0a0a" },
+    { "id": 2, "name": "Charcoal", "hex": "#3d3d3d" },
+    { "id": 3, "name": "Silver", "hex": "#c0c0c0" },
+    { "id": 4, "name": "White", "hex": "#ffffff" },
+    { "id": 5, "name": "Crimson", "hex": "#e03030" },
+    { "id": 6, "name": "Orange", "hex": "#f07020" },
+    { "id": 7, "name": "Sunflower", "hex": "#f0d020" },
+    { "id": 8, "name": "Lime", "hex": "#50c040" },
+    { "id": 9, "name": "Teal", "hex": "#20a080" },
+    { "id": 10, "name": "Sky Blue", "hex": "#3090e0" },
+    { "id": 11, "name": "Indigo", "hex": "#4040c0" },
+    { "id": 12, "name": "Violet", "hex": "#9030c0" },
+    { "id": 13, "name": "Hot Pink", "hex": "#e040a0" },
+    { "id": 14, "name": "Rose", "hex": "#e07080" },
+    { "id": 15, "name": "Sand", "hex": "#d0a060" },
+    { "id": 16, "name": "Forest", "hex": "#207040" },
+    { "id": 17, "name": "Navy", "hex": "#102060" },
+    { "id": 18, "name": "Maroon", "hex": "#701020" },
+    { "id": 19, "name": "Mint", "hex": "#80e0b0" },
+    { "id": 20, "name": "Eraser", "hex": "#1a1a2e" }
+  ]
+}
